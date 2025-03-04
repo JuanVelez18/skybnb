@@ -9,6 +9,9 @@ public class Personas
     public DateOnly FechaNacimiento { get; set; }
     public string? Email { get; set; }
     public string? Telefono { get; set; }
+
+    public List<Alojamientos>? Alojamientos { get; set; }
+    public List<Reservas>? Reservas { get; set; }
 }
 
 public class Direcciones
@@ -25,12 +28,16 @@ public class Ciudades
 {
     public int Id { get; set; }
     public string? Nombre { get; set; }
+
+    public List<Alojamientos>? Alojamientos { get; set; }
 }
 
 public class Tipos_Alejamientos
 {
     public int Id { get; set; }
     public string? Nombre { get; set; }
+
+    public List<Alojamientos>? Alojamientos { get; set; }
 }
 
 public class Alojamientos
@@ -49,12 +56,17 @@ public class Alojamientos
     public Direcciones? _Direccion { get; set; }
     public Ciudades? _Ciudad { get; set; }
     public Tipos_Alejamientos? _Tipo { get; set; }
+
+    public List<Reseñas>? Reseñas { get; set; }
+    public List<Reservas>? Reservas { get; set; }
 }
 
 public class Estados_Reservas
 {
     public int Id { get; set; }
     public string? Nombre { get; set; }
+
+    public List<Reservas>? Reservas { get; set; }
 }
 
 public class Reservas
