@@ -1,4 +1,87 @@
 ﻿Console.WriteLine("Hello, World!");
+var lista_personas = new List<Personas>
+{
+    new()
+    {
+        Id = 1,
+        Cedula = "100784987",
+        Nombre = "Samuel",
+        Apellido = "Ramirez",
+        FechaNacimiento = new DateOnly(2003, 1, 6),
+        Email = "samuel.rami@gmail.com",
+        Telefono = "3333259878"
+    },
+    new()
+    {
+        Id = 2,
+        Cedula = "1006543210",
+        Nombre = "Laura",
+        Apellido = "Gomez",
+        FechaNacimiento = new DateOnly(1995, 3, 15),
+        Email = "laugomez@gmail.com",
+        Telefono = "3123456789"
+    },
+    new()
+    {
+        Id = 3,
+        Cedula = "1009876543",
+        Nombre = "Miguel",
+        Apellido = "Torres",
+        FechaNacimiento = new DateOnly(1988, 7, 20),
+        Email = "migueltorres27@gmail.com",
+        Telefono = "3109876543"
+    },
+    new()
+    {
+        Id = 4,
+        Cedula = "1001122334",
+        Nombre = "Sofia",
+        Apellido = "Herrera",
+        FechaNacimiento = new DateOnly(1992, 11, 8),
+        Email = "sofirrera@gmail.com",
+        Telefono = "3201234567"
+    },
+    new()
+    {
+        Id = 5,
+        Cedula = "100334556",
+        Nombre = "Andres",
+        Apellido = "Perez",
+        FechaNacimiento = new DateOnly(1985, 12, 30),
+        Email = "andresperez45@gmail.com",
+        Telefono = "3159876543"
+    },
+    new()
+    {
+        Id = 6,
+        Cedula = "1000987457",
+        Nombre = "Michelle",
+        Apellido = "Henao",
+        FechaNacimiento = new DateOnly(1999, 4, 7),
+        Email = "michelle.corrales@gmail.com",
+        Telefono = "3058079951"
+    },
+    new()
+    {
+        Id = 7,
+        Cedula = "1007654321",
+        Nombre = "Oscar",
+        Apellido = "Corrales",
+        FechaNacimiento = new DateOnly(1960, 12, 16),
+        Email = "osquitar16@gmail.com",
+        Telefono = "3105048579"
+    },
+    new()
+    {
+        Id = 8,
+        Cedula = "1005678901",
+        Nombre = "Alex",
+        Apellido = "Velez",
+        FechaNacimiento = new DateOnly(1985, 5, 14),
+        Email = "velezalex1985@outlook.com",
+        Telefono = "3217846598"
+    }
+};
 
 public class Personas
 {
