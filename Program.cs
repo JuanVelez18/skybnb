@@ -49,5 +49,26 @@ public class Alojamientos
     public Direcciones? _Direccion { get; set; }
     public Ciudades? _Ciudad { get; set; }
     public Tipos_Alejamientos? _Tipo { get; set; }
+}
 
+public class Estados_Reservas
+{
+    public int Id { get; set; }
+    public string? Nombre { get; set; }
+}
+
+public class Reservas
+{
+    public int Id { get; set; }
+    public int Huesped { get; set; }
+    public int Alojamiento { get; set; }
+    public DateOnly FechaInicio { get; set; }
+    public DateOnly FechaFin { get; set; }
+    public int CantidadPersonas { get; set; }
+    public double CostoTotal { get; set; }
+    public int Estado { get; set; }
+
+    public Personas? _Huesped { get; set; }
+    public Alojamientos? _Alojamiento { get; set; }
+    public Estados_Reservas? _Estado { get; set; }
 }

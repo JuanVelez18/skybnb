@@ -5,6 +5,7 @@
         "Cedula",
         "Descripcion",
         "Direccion",
+        "Huesped",
         "Interseccion",
         "Telefono"
     ]
