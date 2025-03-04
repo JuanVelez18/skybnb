@@ -72,3 +72,15 @@ public class Reservas
     public Alojamientos? _Alojamiento { get; set; }
     public Estados_Reservas? _Estado { get; set; }
 }
+
+public class Reseñas
+{
+    public int Id { get; set; }
+    public int Huesped { get; set; }
+    public int Alojamiento { get; set; }
+    public string? Comentario { get; set; }
+    public int Puntuacion { get; set; }
+
+    public Personas? _Huesped { get; set; }
+    public Alojamientos? _Alojamiento { get; set; }
+}
