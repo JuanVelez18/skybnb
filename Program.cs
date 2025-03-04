@@ -20,3 +20,9 @@ public class Direcciones
     public string? NumeroPuerta { get; set; }
     public string? Complemento { get; set; }
 }
+
+public class Ciudades
+{
+    public int Id { get; set; }
+    public string? Nombre { get; set; }
+}
