@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, World!");
 var lista_personas = new List<Personas>
 {
     new()
@@ -82,6 +82,54 @@ var lista_personas = new List<Personas>
         Telefono = "3217846598"
     }
 };
+
+var lista_direcciones = new List<Direcciones>{
+    new()
+    {
+        Id=1,
+        Via="calle",
+        Numero="40",
+        Num_Direccion="45",
+        Num_Puerta= "78",
+        Complemento="Apto 5"
+    }
+    new()
+    {
+        Id=2,
+        Via="calle",
+        Numero="12",
+        Num_Direccion="34",
+        Num_Puerta= "56",
+        Complemento=null,
+    }
+    new()
+    {
+        Id=3,
+        Via="Via la Ceja",
+        Numero=null,
+        Num_Direccion=null,
+        Num_Puerta= null,
+        Complemento="Km 5"
+    }
+    new()
+    {
+        Id=4,
+        Via="carrera",
+        Numero="50",
+        Num_Direccion="23",
+        Num_Puerta= "89",
+        Complemento="Apto 15"
+    }
+    new()
+    {
+        Id=5,
+        Via="calle",
+        Numero="5",
+        Num_Direccion="45",
+        Num_Puerta= "45",
+        Complemento= null
+    }
+}
 
 public class Personas
 {
