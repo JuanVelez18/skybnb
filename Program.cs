@@ -160,6 +160,35 @@ var lista_ciudades = new List<Ciudades>{
 
 }
 
+var lista_alojamientos = new List<Alojamientos>{
+    new()
+    {
+        Id=1,
+        Nombre= "Apartamento"
+    }
+    new()
+    {
+        Id=2,
+        Nombre= "Casa"
+    }
+    new()
+    {
+        Id= 3,
+        Nombre= "Cabaña"
+    }
+    new()
+    {
+        Id=4,
+        Nombre= "Apartamento"
+    }
+    new()
+    {
+        Id=1,
+        Nombre= "Loft"
+    }
+
+}
+
 public class Personas
 {
     public int Id { get; set; }
