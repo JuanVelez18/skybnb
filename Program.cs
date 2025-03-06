@@ -160,7 +160,7 @@ var lista_ciudades = new List<Ciudades>{
 
 }
 
-var lista_alojamientos = new List<Alojamientos>{
+var lista_tipos_alojamientos = new List<Tipos_Alejamientos>{
     new()
     {
         Id=1,
@@ -188,6 +188,7 @@ var lista_alojamientos = new List<Alojamientos>{
     }
 
 }
+
 
 public class Personas
 {
