@@ -131,6 +131,35 @@ var lista_direcciones = new List<Direcciones>{
     }
 }
 
+var lista_ciudades = new List<Ciudades>{
+    new()
+    {
+        Id=1,
+        Nombre= "Cartagena"
+    }
+    new()
+    {
+        Id=2,
+        Nombre= "Cartagena"
+    }
+    new()
+    {
+        Id= 3,
+        Nombre= "Medellin"
+    }
+    new()
+    {
+        Id=4,
+        Nombre= "Santa Marta"
+    }
+    new()
+    {
+        Id=1,
+        Nombre= "Bogota"
+    }
+
+}
+
 public class Personas
 {
     public int Id { get; set; }
