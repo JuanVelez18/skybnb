@@ -89,168 +89,258 @@ var lista_direcciones = new List<Direcciones>{
         Id=1,
         Via="calle",
         Numero="40",
-        Num_Direccion="45",
-        Num_Puerta= "78",
+        NumeroInterseccion="45",
+        NumeroPuerta= "78",
         Complemento="Apto 5"
-    }
+    },
     new()
     {
         Id=2,
         Via="calle",
         Numero="12",
-        Num_Direccion="34",
-        Num_Puerta= "56",
+        NumeroInterseccion="34",
+        NumeroPuerta= "56",
         Complemento=null,
-    }
+    },
     new()
     {
         Id=3,
         Via="Via la Ceja",
         Numero=null,
-        Num_Direccion=null,
-        Num_Puerta= null,
+        NumeroInterseccion=null,
+        NumeroPuerta= null,
         Complemento="Km 5"
-    }
+    },
     new()
     {
         Id=4,
         Via="carrera",
         Numero="50",
-        Num_Direccion="23",
-        Num_Puerta= "89",
+        NumeroInterseccion="23",
+        NumeroPuerta= "89",
         Complemento="Apto 15"
-    }
+    },
     new()
     {
         Id=5,
         Via="calle",
         Numero="5",
-        Num_Direccion="45",
-        Num_Puerta= "45",
+        NumeroInterseccion="45",
+        NumeroPuerta= "45",
         Complemento= null
     }
-}
+};
 
 var lista_ciudades = new List<Ciudades>{
     new()
     {
         Id=1,
         Nombre= "Cartagena"
-    }
+    },
     new()
     {
         Id=2,
         Nombre= "Cartagena"
-    }
+    },
     new()
     {
         Id= 3,
         Nombre= "Medellin"
-    }
+    },
     new()
     {
         Id=4,
         Nombre= "Santa Marta"
-    }
+    },
     new()
     {
         Id=1,
         Nombre= "Bogota"
     }
 
-}
+};
 
 var lista_tipos_alojamientos = new List<Tipos_Alejamientos>{
     new()
     {
         Id=1,
         Nombre= "Apartamento"
-    }
+    },
     new()
     {
         Id=2,
         Nombre= "Casa"
-    }
+    },
     new()
     {
         Id= 3,
         Nombre= "Cabaña"
-    }
+    },
     new()
     {
         Id=4,
         Nombre= "Apartamento"
-    }
+    },
     new()
     {
         Id=5,
         Nombre= "Loft"
     }
 
-}
+};
 var lista_alojamientos = new List<Alojamientos>{
     new()
     {
         Id=1,
-        Anfitrion= lista_personas[5],
+        _Anfitrion= lista_personas[5],
         Descripcion= "Apartamento ubicado cerca al centro de la ciudad." ,
-        Direccion= lista_direcciones[0] ,
-        Ciudades= lista_ciudades[0],
-        Tipos= lista_tipos_alojamientos[0],
-        Costo_Noche= 120000,
-        Cantidad_Habitaciones= 2,
-        Cantidad_Baños= 1,
-    }
+        _Direccion= lista_direcciones[0] ,
+        _Ciudad= lista_ciudades[0],
+        _Tipo= lista_tipos_alojamientos[0],
+        CostoNoche= 120000,
+        CantidadHabitaciones= 2,
+        CantidadBaños= 1,
+    },
     new()
     {
         Id=2,
-        Anfitrion= ,
+        _Anfitrion= lista_personas[6],
         Descripcion= "Casa espaciosa con vista al mar.",
-        Direccion= lista_direcciones[1],
-        Ciudades= lista_ciudades[1],
-        Tipos= lista_tipos_alojamientos[1],
-        Costo_Noche= 250000,
-        Cantidad_Habitaciones= 3,
-        Cantidad_Baños= 2,
-    }
+        _Direccion= lista_direcciones[1],
+        _Ciudad= lista_ciudades[1],
+        _Tipo= lista_tipos_alojamientos[1],
+        CostoNoche= 250000,
+        CantidadHabitaciones= 3,
+        CantidadBaños= 2,
+    },
     new()
     {
         Id= 3,
-        Anfitrion= ,
+        _Anfitrion= lista_personas[5],
         Descripcion= "Cabaña acogedora en la montaña.",
-        Direccion= lista_direcciones[2],
-        Ciudades= lista_ciudades[2],
-        Tipos= lista_tipos_alojamientos[2],
-        Costo_Noche= 180000,
-        Cantidad_Habitaciones= 2,
-        Cantidad_Baños= 1,
-    }
+        _Direccion= lista_direcciones[2],
+        _Ciudad= lista_ciudades[2],
+        _Tipo= lista_tipos_alojamientos[2],
+        CostoNoche= 180000,
+        CantidadHabitaciones= 2,
+        CantidadBaños= 1,
+    },
     new()
     {
         Id=4,
-        Anfitrion= ,
+        _Anfitrion= lista_personas[7],
         Descripcion= "Apartamento moderno cerca de la playa.",
-        Direccion= lista_direcciones[3],
-        Ciudades= lista_ciudades[3],
-        Tipos= lista_tipos_alojamientos[3],
-        Costo_Noche= 200000,
-        Cantidad_Habitaciones= 2,
-        Cantidad_Baños= 2,
-    }
+        _Direccion= lista_direcciones[3],
+        _Ciudad= lista_ciudades[3],
+        _Tipo= lista_tipos_alojamientos[3],
+        CostoNoche= 200000,
+        CantidadHabitaciones= 2,
+        CantidadBaños= 2,
+    },
     new()
     {
         Id=5,
-        Anfitrion= ,
+        _Anfitrion= lista_personas[6],
         Descripcion= "Loft minimalista en el centro de la ciudad.",
-        Direccion= lista_direcciones[4],
-        Ciudades= lista_ciudades[4],
-        Tipos= lista_tipos_alojamientos[4],
-        Costo_Noche= 150000,
-        Cantidad_Habitaciones= 1,
-        Cantidad_Baños= 1,
+        _Direccion= lista_direcciones[4],
+        _Ciudad= lista_ciudades[4],
+        _Tipo= lista_tipos_alojamientos[4],
+        CostoNoche= 150000,
+        CantidadHabitaciones= 1,
+        CantidadBaños= 1,
     }
 
-}
+};
+
+var lista_estados_reservas = new List<Estados_Reservas>{
+    new()
+    {
+        Id=1,
+        Nombre= "Pendiente"
+    },
+    new()
+    {
+        Id=2,
+        Nombre= "Pagada"
+    },
+    new()
+    {
+        Id= 3,
+        Nombre= "Confirmada"
+    },
+    new()
+    {
+        Id=4,
+        Nombre= "En curso"
+    },
+    new()
+    {
+        Id=5,
+        Nombre= "Finalizada"
+    }
+
+};
+
+var lista_reservas = new List<Reservas>{
+    new()
+    {
+        Id=1,
+        _Huesped= lista_personas[0],
+        _Alojamiento= lista_alojamientos[0],
+        FechaInicio= new DateOnly(2025,2,25),
+        FechaFin= new DateOnly(2025,2,28),
+        CantidadPersonas= 2,
+        CostoTotal= 414000,
+        _Estado= lista_estados_reservas[0],
+    },
+    new()
+    {
+        Id=2,
+        _Huesped= lista_personas[1],
+        _Alojamiento= lista_alojamientos[1],
+        FechaInicio= new DateOnly(2025,3,1),
+        FechaFin= new DateOnly(2025,3,5),
+        CantidadPersonas= 4,
+        CostoTotal= 1000000,
+        _Estado= lista_estados_reservas[1],
+    },
+
+    new()
+    {
+        Id= 3,
+        _Huesped= lista_personas[2],
+        _Alojamiento= lista_alojamientos[2],
+        FechaInicio= new DateOnly(2025,3,10),
+        FechaFin= new DateOnly(2025,3,15),
+        CantidadPersonas= 3,
+        CostoTotal= 900000,
+        _Estado= lista_estados_reservas[2],
+    },
+    new()
+    {
+        Id=4,
+        _Huesped= lista_personas[3],
+        _Alojamiento= lista_alojamientos[3],
+        FechaInicio= new DateOnly(2025,3,20),
+        FechaFin= new DateOnly(2025,3,25),
+        CantidadPersonas= 3,
+        CostoTotal= 1000000,
+        _Estado= lista_estados_reservas[3],
+    },
+
+    new()
+    {
+        Id=5,
+        _Huesped= lista_personas[4],
+        _Alojamiento= lista_alojamientos[4],
+        FechaInicio= new DateOnly(2025,4,5),
+        FechaFin= new DateOnly(2025,4,10),
+        CantidadPersonas= 2,
+        CostoTotal= 750000,
+        _Estado= lista_estados_reservas[4],
+    }
+};
+
 
 
 public class Personas
