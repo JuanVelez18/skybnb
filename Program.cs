@@ -183,8 +183,71 @@ var lista_tipos_alojamientos = new List<Tipos_Alejamientos>{
     }
     new()
     {
-        Id=1,
+        Id=5,
         Nombre= "Loft"
+    }
+
+}
+var lista_alojamientos = new List<Alojamientos>{
+    new()
+    {
+        Id=1,
+        Anfitrion= lista_personas[5],
+        Descripcion= "Apartamento ubicado cerca al centro de la ciudad." ,
+        Direccion= lista_direcciones[0] ,
+        Ciudades= lista_ciudades[0],
+        Tipos= lista_tipos_alojamientos[0],
+        Costo_Noche= 120000,
+        Cantidad_Habitaciones= 2,
+        Cantidad_Baños= 1,
+    }
+    new()
+    {
+        Id=2,
+        Anfitrion= ,
+        Descripcion= "Casa espaciosa con vista al mar.",
+        Direccion= lista_direcciones[1],
+        Ciudades= lista_ciudades[1],
+        Tipos= lista_tipos_alojamientos[1],
+        Costo_Noche= 250000,
+        Cantidad_Habitaciones= 3,
+        Cantidad_Baños= 2,
+    }
+    new()
+    {
+        Id= 3,
+        Anfitrion= ,
+        Descripcion= "Cabaña acogedora en la montaña.",
+        Direccion= lista_direcciones[2],
+        Ciudades= lista_ciudades[2],
+        Tipos= lista_tipos_alojamientos[2],
+        Costo_Noche= 180000,
+        Cantidad_Habitaciones= 2,
+        Cantidad_Baños= 1,
+    }
+    new()
+    {
+        Id=4,
+        Anfitrion= ,
+        Descripcion= "Apartamento moderno cerca de la playa.",
+        Direccion= lista_direcciones[3],
+        Ciudades= lista_ciudades[3],
+        Tipos= lista_tipos_alojamientos[3],
+        Costo_Noche= 200000,
+        Cantidad_Habitaciones= 2,
+        Cantidad_Baños= 2,
+    }
+    new()
+    {
+        Id=5,
+        Anfitrion= ,
+        Descripcion= "Loft minimalista en el centro de la ciudad.",
+        Direccion= lista_direcciones[4],
+        Ciudades= lista_ciudades[4],
+        Tipos= lista_tipos_alojamientos[4],
+        Costo_Noche= 150000,
+        Cantidad_Habitaciones= 1,
+        Cantidad_Baños= 1,
     }
 
 }
